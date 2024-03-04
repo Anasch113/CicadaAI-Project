@@ -1,0 +1,56 @@
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 420px;
+  }
+  
+  .features-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .feature-card {
+    width: 30%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .feature-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .feature-card {
+      width: 100%;
+    }
+
+    .features-container {
+      padding-top: 200px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+
+    .features-container {
+      padding-top: 120px;
+    }
+  }
+  @media (min-width: 993px) and (max-width: 1500px) {
+
+    .features-container {
+      padding-top: 250px;
+    }
+  }
+  @media (min-width: 500px) and (max-width: 767px) {
+
+    .features-container {
+      padding-top: 100px;
+    }
+  }

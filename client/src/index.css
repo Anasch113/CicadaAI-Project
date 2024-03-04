@@ -1,0 +1,10 @@
+*{
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(242, 239, 236);
+  color: rgb(11, 10, 10);
+  overflow-x: hidden;
+}

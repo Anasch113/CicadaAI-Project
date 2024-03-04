@@ -1,0 +1,41 @@
+.contact-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .picture-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-form-container {
+      flex-direction: column;
+    }
+
+    .col-container{
+        flex-direction: column-reverse !important;
+    }
+    .form-container {
+      margin-bottom: 20px;
+    }
+
+    .picture-container{
+        margin-bottom: 20px;
+    }
+  }
+  

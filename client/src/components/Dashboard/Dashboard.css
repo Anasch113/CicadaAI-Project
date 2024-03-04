@@ -1,0 +1,274 @@
+.container {
+    min-height: 80vh;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.delete-btn {
+    background-color: rgb(251, 6, 100);
+    color: white;
+    height: 40px;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: rgb(231, 41, 41);
+}
+
+
+.custom-container {
+    max-width: 28rem;
+    margin: auto;
+    padding: 1rem;
+    background-color: #edf2f7;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 0.375rem;
+    min-height: 50vh;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .custom-flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .custom-button {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    background-color: #D6A68E;
+    margin-right: 10px;
+    color: #525355;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #96907C;
+    color: white;
+  }
+  
+  .custom-info {
+    margin-top: 1rem;
+    text-align: center;
+    border-bottom: 0.125rem solid #cbd5e0;
+    padding-bottom: 0.5rem;
+    color: #4a5568;
+  }
+  
+  .custom-recorded-audios {
+    margin-top: 1rem;
+  }
+  
+  .custom-recorded-audios h2 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+  }
+  
+  .custom-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .custom-list-item {
+    margin-bottom: 1rem;
+  }
+  
+  .custom-audio-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-audio {
+    margin-right: 0.5rem;
+  }
+  
+  .custom-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-action-button {
+    background-color: #f7fafc;
+    color: #2d3748;
+    margin-right: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-action-button:hover {
+    color: #e53e3e;
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(214, 115, 115);
+    color: white;
+  }
+
+
+  .Modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  /* Modal content */
+  .ModalContent {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Adjust the width as needed */
+  }
+  
+  /* Close button */
+  .CloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Modal body */
+  .ModalBody {
+    margin-bottom: 20px;
+  }
+  
+  /* Input field */
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Modal footer */
+  .ModalFooter {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Save and Cancel buttons */
+  button {
+    padding: 10px 15px;
+    background-color: #cf8236;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.cancel {
+    background-color: #d9534f;
+  }
+  
+  /* Responsive styles - adjust as needed */
+  @media screen and (max-width: 600px) {
+    .ModalContent {
+      width: 90%;
+    }
+  }
+
+
+  /* MyDropdown.css */
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+  margin-left: 10px;
+  padding: 7px;
+  background-color: #507186;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: block;
+  position: absolute;
+  top: 62px;
+  right: -40px;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Show dropdown content on button click
+.dropdown-btn:focus + .dropdown-content,
+.dropdown-content:focus-within {
+  display: block;
+} */
+
+/* Style for each dropdown item */
+.dropdown-item {
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Highlight on hover */
+.dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.right-menu {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  top: 85px;
+  /* top: 50%;
+  transform: translateY(-50%); */
+
+  background-color: rgba(49, 47, 47, 0.5);
+}
+
+.menu-links {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.menu-links:hover {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: rgb(236, 224, 116);
+}
+
+.menu-toggle {
+  margin-left: 10px;
+  padding: 8px;
+}
+  
